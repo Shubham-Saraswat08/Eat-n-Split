@@ -29,7 +29,7 @@ body {
   min-height: 66vh;
   display: grid;
   grid-template-columns: 34rem 44rem;
-  column-gap: 4rem;
+  column-gap: 2rem;
   align-items: start;
 }
 
@@ -166,4 +166,70 @@ form h2 {
   text-transform: uppercase;
   letter-spacing: -0.5px;
   margin-bottom: 1.6rem;
+}
+.logo {
+  display: flex;
+  justify-self: center;
+  margin: 2rem 0;
+}
+
+/* Tablet styles */
+@media (max-width: 820px) {
+  body {
+    margin: 0 2rem;
+  }
+  .form-split-bill {
+    padding: 3.2rem 2rem;
+  }
+  .app {
+    grid-template-columns: auto 1fr;
+    row-gap: 2rem;
+  }
+  form {
+    font-size: 1rem;
+  }
+
+  .sidebar li {
+    grid-template-columns: 4rem 1fr auto;
+  }
+
+  .button {
+    padding: 0.6rem 1rem;
+  }
+
+  form {
+    padding: 1rem;
+  }
+
+  form h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 550px) {
+  body {
+    align-items: flex-start;
+    padding: 1rem 0;
+  }
+  .app {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+  label::first-letter {
+    font-size: 1.6rem;
+  }
+
+  input,
+  select {
+    font-size: 1.4rem;
+  }
+
+  .sidebar ul {
+    font-size: 1.2rem;
+  }
+
+  .form-add-friend {
+    grid-template-columns: 1fr;
+  }
 }
